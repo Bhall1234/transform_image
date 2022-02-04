@@ -98,4 +98,4 @@ cv2.imshow('thresh', thresh)
 cv2.imshow('image', image)
 cv2.waitKey()
 
-rotate_image()
+#rotate_image()
