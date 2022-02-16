@@ -2,8 +2,22 @@
 import cv2
 import numpy as np
 
+capture = cv2.VideoCapture('Videos/test1639658932.91.avi')
+
+# Use while loop and read video frame by frame
+# Returns the frame, boolean says if it was succesful or not
+#while True:
+    #isTrue, frame = capture.read() # Grab frames
+    #cv2.imshow('Video', capture) # Display each frame
+
+    #if cv2.waitKey(20) & 0xFF==ord('d'): # Break out whileloop 
+        #break #if letter d is pressed break.
+
+#capture.release()
+#cv2.destroyAllWindows
+
 # Load the image
-image = cv2.imread('Photos/board.png') 
+#image = cv2.imread('Photos/board.png') 
 
 # Gray Scale
 #gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
@@ -97,5 +111,3 @@ for c in cnts:
 cv2.imshow('thresh', thresh)
 cv2.imshow('image', image)
 cv2.waitKey()
-
-#rotate_image()
